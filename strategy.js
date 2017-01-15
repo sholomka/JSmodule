@@ -6,6 +6,8 @@ var validator = {
     validate: function(data) {
         var i, msg, type, checker, result_ok;
 
+        this.messages = [];
+
         for (i in data) {
             if (data.hasOwnProperty(i)) {
 
